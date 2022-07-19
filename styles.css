@@ -1,1 +1,30 @@
+body {
+	width: 100%;
+	margin: 0;
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+h1, p {
+	text-align: center;
+
+}
+
+form {
+	max-width: 800px;
+	min-width: 400px;
+	margin: 0 auto;
+}
+
+label {
+	display: block;
+}
+
+input, textarea, select {
+	width: 100%;
+}
+
+.inline {
+	width: unset;
+}
 

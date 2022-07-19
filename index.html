@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Formulario de Pesquisa</title>
+</head>
+<body>
+	<h1 id="title">Pesquisa DEV 2022</h1>
+	<p id="description">Obrigado por ajuda a comunidade DEV por meio dessa pesquisa</p>
+	<form id="survey-form">
+		<!--Informações Pessoais-->
+		<fieldset>
+			<label id="name-label">Nome
+				<input type="text" name="nome" id="name" placeholder="Digite seu nome" required>
+			</label>
+			<label id="email-label">Email
+				<input type="email" name="email" id="email" placeholder="Digite seu email" required>
+			</label>
+			<label id="number-label">Idade
+				<input type="number" name="idade" min="13" max="120" id="number"  placeholder="Idade" required>
+			</label>
+		</fieldset>
+		<!--Informações sobre área de atuação-->
+		<fieldset>
+			<label>Qual opção melhor define sua atual posição:
+				<select id="dropdown" required>
+					<option value="" selected disabled>selecione alguma opção</option>
+					<option value="1">Estudante</option>
+					<option value="2">Trabalhando em período integral</option>
+					<option value="3">Estudando em período integral</option>
+					<option value="4">Outros</option>
+				</select>
+			</label>
+			<label>Quais linguagens de programação você estuda ou trabalha com?
+				<label>
+					<input type="checkbox" value="javascript" class="inline"> JavaScript
+				</label>
+				<label>
+					<input type="checkbox" value="python" class="inline"> Python
+				</label>
+				<label>
+					<input type="checkbox" value="java" class="inline"> Java
+				</label>
+				<label>
+					<input type="checkbox" value="csharp" class="inline"> C#
+				</label>
+				<label>
+					<input type="checkbox" value="php" class="inline"> PHP
+				</label>
+			</label>
+		</fieldset>
+		<!--Recomendações para melhorar a pesquisa-->
+		<fieldset>
+			<label>Você recomendaria essa pesquisa para um amigo?
+				<label>
+					<input type="radio" name="recomendar" value="yes" class="inline" checked> Definitivamente
+				</label>
+				<label>
+					<input type="radio" name="recomendar" value="talvez" class="inline"> Talvez
+				</label>
+				<label>
+					<input type="radio" name="recomendar" value="no" class="inline"> Claro que não
+				</label>
+			</label>
+			<label> Algum comentario ou sugestão
+				<textarea placeholder="Digite seu comentario aqui" rows="3" cols="30"></textarea>
+			</label>
+		</fieldset>
+		<input type="submit" id="submit">
+	</form>
 
+</body>
+</html>
